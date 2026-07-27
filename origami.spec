@@ -4,6 +4,7 @@
 Name:		origami
 Version:	7.14.0
 Release:	1
+%{!?rocm_llvm_maj_ver:%global rocm_llvm_maj_ver 23}
 Summary:	Analytical solution selection for ROCm GEMM
 License:	MIT
 Group:		System/Libraries
@@ -13,6 +14,7 @@ Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-7.14/o
 BuildRequires:	rocm-rpm-macros
 BuildRequires:	cmake
 BuildRequires:	ninja
+BuildRequires:	git-core
 BuildRequires:	rocm-cmake
 BuildRequires:	rocm-hip-devel
 BuildRequires:	clang >= %{rocm_llvm_maj_ver}

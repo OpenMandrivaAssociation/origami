@@ -3,7 +3,7 @@
 
 Name:		origami
 Version:	7.14.0
-Release:	1
+Release:	2
 %{!?rocm_llvm_maj_ver:%global rocm_llvm_maj_ver 23}
 Summary:	Analytical solution selection for ROCm GEMM
 License:	MIT
@@ -21,7 +21,6 @@ BuildRequires:	clang >= %{rocm_llvm_maj_ver}
 BuildRequires:	clang-tools
 BuildRequires:	pkgconfig(libdrm)
 
-ExclusiveArch:	%{x86_64} %{aarch64}
 
 %description
 Origami provides analytical heuristics for GEMM / attention solution

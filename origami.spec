@@ -1,15 +1,15 @@
-# Origami — analytical GEMM solution selection (TheRock 10.0)
+# Origami — analytical GEMM solution selection (TheRock 10.1)
 # Shared dependency of hipBLASLt TensileLite / rocisa.
 
 Name:		origami
-Version:	10.0.0
+Version:	10.1.0
 Release:	1
 %{!?rocm_llvm_maj_ver:%global rocm_llvm_maj_ver 23}
 Summary:	Analytical solution selection for ROCm GEMM
 License:	MIT
 Group:		System/Libraries
 URL:		https://github.com/ROCm/rocm-libraries
-Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.0/origami.tar.gz#/origami-%{version}.tar.gz
+Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.1/origami.tar.gz#/origami-%{version}.tar.gz
 
 BuildRequires:	rocm-rpm-macros
 BuildRequires:	cmake
